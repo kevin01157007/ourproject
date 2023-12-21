@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<script type="text/javascript" src="../../wgo/wgo.js"></script>
+	<script type="text/javascript" src="../../wgo/kifu.js"></script>
+	<script type="text/javascript" src="../../wgo/sgfparser.js"></script>
+	<script type="text/javascript" src="../../wgo/player.js"></script>
+	<script type="text/javascript" src="tsumego.js"></script>
+	<!--link rel="stylesheet" type="text/css" href="../../wgo/wgo.player.css" -->
+	<link rel="stylesheet" type="text/css" href="tsumego.css">
+
+</head>
+<body>
+<img class="background" src="board3.jpg">
+<input type="button" id="but" class="but" value="回選單" onclick="location.href='../../../MENU/選單.html'">
+<h1 style="font-family: Consolas">高手題</h1>
+
+<div style="width: 30%; margin: auto;top:0; background-color: #f9f9f9; padding: 10px; border-radius: 10px" id="tsumego_wrapper">
+Your browser doesn't support WGo Player. Use some modern browser like IE9, Google Chrome or Mozilla Firefox.
+</div>
+
+<script>
+var tsumego = new WGo.Tsumego(document.getElementById("tsumego_wrapper"), {
+	sgf: "(;FF[4]GM[1]VW[aa:jg]SZ[19]ST[2]"+
+	"AB[af][bb][bc][bf][cc][cd][ce]"+
+	"AW[ba][bg][cb][cf][cg][db][dc][dd][de]"+
+	"C[黑棋如何做活]FG[1](;B[ad];W[be](;B[ab];W[ag];B[ae]C[成功做活!!好厲害])(;B[ae];W[ab]C[黑棋只有一眼，再想想]))"+
+    "(;B[ab];W[ad]C[黑棋成刀五死型，再想想])"+
+	"(;B[be];W[ad]C[黑棋成丁四死型，再想想])",
+	 /* remove this line hide solution */
+});
+tsumego.setCoordinates(true);
+</script>
+		
+</body>
+</html>

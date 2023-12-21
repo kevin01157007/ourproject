@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>進階題一</title>
+	<script type="text/javascript" src="../../wgo/wgo.js"></script>
+	<script type="text/javascript" src="../../wgo/kifu.js"></script>
+	<script type="text/javascript" src="../../wgo/sgfparser.js"></script>
+	<script type="text/javascript" src="../../wgo/player.js"></script>
+	<script type="text/javascript" src="tsumego.js"></script>
+	<link rel="stylesheet" type="text/css" href="tsumego.css">
+</head>
+<body>
+<img class="background" src="board3.jpg">
+<input type="button" id="but" class="but" value="回選單" onclick="location.href='../../../MENU/選單.html'">
+<h1 style="font-family: Consolas">進階題一</h1>
+
+<div style="width: 30%; margin:auto;top:0; background-color: #f9f9f9; padding: 10px; border-radius: 10px" id="tsumego_wrapper">
+Your browser doesn't support WGo Player. Use some modern browser like IE9, Google Chrome or Mozilla Firefox.
+</div>
+
+<script>
+var tsumego = new WGo.Tsumego(document.getElementById("tsumego_wrapper"), {
+	sgf: "(;FF[4]GM[1]VW[aa:jg]SZ[19]ST[2]EV[N° 1 .|. Level #2]AB[ab][ac][bc][bd][cd][dd][ed][fa][fb][fc]AW[bb][ca][cc][da][dc][ea][eb][ec][fd][gd][hb]C[黑棋如何跟白棋對殺]FG[1](;B[cb];W[gc];B[ba];W[gb];B[db]C[成功了!]TE[1])"+
+    "(;B[aa];W[gc](;B[ba];W[gb];B[cb];W[ga]C[黑差一氣，黑失敗])(;B[cb];W[gb];B[ba];W[ga]C[黑差一氣，黑失敗]))"+
+    "(;B[ba];W[aa]C[形成打劫，不是最好的解法])",
+	 /* remove this line hide solution */
+});
+tsumego.setCoordinates(true);
+</script>
+		
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	
+	<title>基礎題三</title>
+	<script type="text/javascript" src="../../wgo/wgo.js"></script>
+	<script type="text/javascript" src="../../wgo/kifu.js"></script>
+	<script type="text/javascript" src="../../wgo/sgfparser.js"></script>
+	<script type="text/javascript" src="../../wgo/player.js"></script>
+	<script type="text/javascript" src="tsumego.js"></script>
+	<!--link rel="stylesheet" type="text/css" href="../../wgo/wgo.player.css" -->
+	<link rel="stylesheet" type="text/css" href="tsumego.css">
+
+</head>
+<body>
+<img class="background" src="board3.jpg">
+<input type="button" id="but" class="but" value="回選單" onclick="location.href='../../../MENU/選單.html'">
+<h1 style="font-family: Consolas">基礎題三</h1>
+
+<div style="width: 30%; margin: auto;top:0; background-color: #f9f9f9; padding: 10px; border-radius: 10px" id="tsumego_wrapper">
+Your browser doesn't support WGo Player. Use some modern browser like IE9, Google Chrome or Mozilla Firefox.
+</div>
+
+<script>
+var tsumego = new WGo.Tsumego(document.getElementById("tsumego_wrapper"), {
+	sgf: "(;FF[4]GM[1]VW[aa:jg]SZ[19]ST[2]EV[N° 1 .|. Level #2]AB[ab][ad][ba][bb][bd][cd][da][db][dc][dd]AW[ac][ae][bc][be][ca][cb][ce][de][ea][eb][ec][ed][ee]C[黑棋剩一氣，下哪才能吃掉白棋?]FG[1](;B[cc]C[成功了!]TE[1])",
+	 /* remove this line hide solution */
+});
+tsumego.setCoordinates(true);
+</script>
+		
+</body>
+</html>
