@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "devStart": "nodemon server.js"
+    "devStart": "nodemon server.js",
+     "test": "env-cmd mocha -R spec"
   },
   "author": "",
   "license": "ISC",
