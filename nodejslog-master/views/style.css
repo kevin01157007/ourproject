@@ -1,25 +1,21 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
 .background {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     z-index: -1;
 }
-img {
-    width: 100%;
-     
-}
-h1{
-    text-align: center;
-    border:20px;
-    padding: 10px;
-    background-color: aqua;
-}
-.but{
+.button{
     position: absolute;
     top: 20%;
-    left: 46%;
+    left: 47%;
     padding:15px 32px;
     text-decoration: none;
     display: inline-block;
@@ -27,6 +23,80 @@ h1{
     margin: 4px 2px; 
     background-color: #b87708; 
     color: white; 
+}
+#goboard {
+    background-image: url('GOBOARD.jpg');
+}
+
+#goboard1 {
+    background-image: url('GOBOARD1.jpg');
+    opacity: 0;
+}
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+p{
+    text-align: left;
+    font-size: 20px;
+    width: 20%;
+    padding: 20px;
+    background-color: #1b1a1a;
+    color: #fff;
+}
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+#welcome {
+    animation: zoomIn 2s;
+}
+
+.but{
+        background-color: #b87708; 
+        color: white; 
+        padding: 15px 32px; 
+        text-align: center; 
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px; 
+        margin: 4px 2px; 
+        position:absolute;
+        top: 13%;
+        left:46%;
+
+}
+.social-icon.facebook{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+}
+.social-icon.instagram{
+    position: fixed;
+    right:60px;
+    bottom: 20px;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+}
+@keyframes fadeInOut {
+    0% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+.fadeInOut {
+    animation-name: fadeInOut;
+    animation-duration: 8s;
 }
 .a {
     display: inline-block;
