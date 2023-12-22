@@ -5,7 +5,7 @@ if (process.env.NODE_ENV !== 'production') {
   const express = require('express')
   const app = express()
   const mongoose = require('mongoose');
-  mongoose.connect(process.env.MONGO_URL + '?directConnection=true');
+  mongoose.connect('mongodb+srv://darkofrainbow:b035333266@loginsystem.fgiekat.mongodb.net/test?directConnection=true');
   const db = mongoose.connection;
 
 // 與資料庫連線發生錯誤時
