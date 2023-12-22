@@ -42,6 +42,8 @@ const User = mongoose.model('User', userSchema);
   app.use('/go-board-final-project/wgo.js-master', express.static('go-board-final-project/wgo.js-master'));
   app.use('/go-board-final-project/wgo.js-master/死活題/tsumego', express.static('go-board-final-project/wgo.js-master/死活題/tsumego'));
   app.use('/go-board-final-project/celebrity', express.static('go-board-final-project/celebrity'));
+  const path = require('path');
+  app.use('/.well-known/pki-validation', express.static('.well-known/pki-validation'));
   const bcrypt = require('bcrypt')
   const passport = require('passport')
   const flash = require('express-flash')
