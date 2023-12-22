@@ -50,7 +50,7 @@ const User = mongoose.model('User', userSchema);
   const session = require('express-session')
   const MongoStore = require('connect-mongo');
   const methodOverride = require('method-override')
-  
+  const port = process.env.PORT || 8080;
   const initializePassport = require('./passport-config')
   initializePassport(
     passport,
@@ -129,4 +129,6 @@ const User = mongoose.model('User', userSchema);
     next()
   }
   
-  app.listen(3000)
+  app.listen(port ,()=>{
+    console.log("hi");
+  });
