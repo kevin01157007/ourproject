@@ -46,6 +46,7 @@ const User = mongoose.model('User', userSchema);
   const passport = require('passport')
   const flash = require('express-flash')
   const session = require('express-session')
+  const MongoStore = require('connect-mongo');
   const methodOverride = require('method-override')
   
   const initializePassport = require('./passport-config')
@@ -62,7 +63,10 @@ const User = mongoose.model('User', userSchema);
   app.use(session({
     secret: 'your secret string',
     resave: false,
-    saveUninitialized: true
+    saveUninitialized: true,
+    store: MongoStore.create({ 
+      mongoUrl: process.env.MONGO_URL 
+    })
   }));
   app.use(passport.initialize())
   app.use(passport.session())
