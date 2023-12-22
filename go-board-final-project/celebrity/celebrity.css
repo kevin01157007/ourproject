@@ -1,0 +1,130 @@
+.profile-container {
+    background-color: rgba(146, 90, 26, 0.753); 
+    color: white; 
+    font-family: 'Arial', sans-serif;  
+    max-width: 1200px;  
+    margin: 0 auto;  
+    padding: 20px; 
+    display: flex;  
+    align-items: center;  
+    justify-content: space-around; 
+}
+.profile-container img {
+    border-radius: 50%;  
+    max-width: 200px; 
+    margin-right: 20px;  
+}
+.profile-text {
+    text-align: left; 
+}
+.profile-name {
+    font-size: 48px;  
+    font-weight: bold;  
+    margin-bottom: 10px;  
+}
+.profile-title {
+    font-size: 24px;  
+    margin-bottom: 20px;  
+    }
+.profile-description{
+    font-size: 18px;  
+}
+.p{
+    background-color: rgba(146, 90, 26, 0.753); 
+    color: white;  
+    font-family: 'Arial', sans-serif;  
+    font-size: 36px; 
+    text-align: center;  
+    padding: 20px; 
+    margin-bottom: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);  
+}
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    z-index: -1;
+    
+}
+
+.div {
+    max-width: 800px;  
+    margin: 0 auto;  
+    font-family: Arial, sans-serif;  
+    font-size: 16px;  
+    line-height: 1.6;  
+    box-sizing: border-box;
+    border: 2px solid ;
+    border-color:rgb(14, 14, 8);
+    padding:20px;
+    background-color: rgb(221, 190, 123);
+    justify-content: space-around;
+    
+  }
+  .container{
+    width: 800px;
+    margin: 0 auto;
+    padding:20px;
+    border:6px solid;
+    border-color: rgb(88, 47, 5);
+    background-color: rgb(221, 190, 123)
+
+    
+}
+.nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+}
+
+.hamburger {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+nav li ul {
+    display: none;
+}
+
+nav li:hover ul {
+    display: block;
+}
