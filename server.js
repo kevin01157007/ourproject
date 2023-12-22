@@ -5,7 +5,7 @@ if (process.env.NODE_ENV !== 'production') {
   const express = require('express')
   const app = express()
   const mongoose = require('mongoose');
-  mongoose.connect(process.env.MONGO_URL);
+  mongoose.connect(process.env.MONGO_URL + '?connectTimeoutMS=30000');
   const db = mongoose.connection;
 
 // 與資料庫連線發生錯誤時
