@@ -42,6 +42,7 @@ const User = mongoose.model('User', userSchema);
   app.use('/go-board-final-project/wgo.js-master', express.static('go-board-final-project/wgo.js-master'));
   app.use('/go-board-final-project/wgo.js-master/死活題/tsumego', express.static('go-board-final-project/wgo.js-master/死活題/tsumego'));
   app.use('/go-board-final-project/celebrity', express.static('go-board-final-project/celebrity'));
+  app.use('/go-board-final-project/exp', express.static('go-board-final-project/exp'));
   const path = require('path');
   const bcrypt = require('bcrypt')
   const passport = require('passport')
