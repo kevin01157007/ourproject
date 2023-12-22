@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "devStart": "nodemon server.js",
-    "start:dev": "run-with-node-env development node"
+    "devStart": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
