@@ -91,16 +91,17 @@
                 var buttons = document.querySelectorAll('.profile-but');
                 buttons.forEach(function(button) {
                     button.addEventListener('click', function() {
-                      
-                        document.querySelectorAll('.profile-description').forEach(function(desc) {
-                            desc.style.display = 'none';
-                        });
-    
-                        
                         var targetId = this.getAttribute('data-target');
                         var targetElement = document.getElementById(targetId);
                         if (targetElement) {
-                            targetElement.style.display = 'block'; 
+                            if (targetElement.style.display === 'block') {
+                                targetElement.style.display = 'none';
+                            } else {
+                                document.querySelectorAll('.profile-description').forEach(function(desc) {
+                                    desc.style.display = 'none';
+                                });
+                                targetElement.style.display = 'block';
+                            }
                         } else {
                             console.error('No element with ID:', targetId);
                         }
