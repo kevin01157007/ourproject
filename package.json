@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "build":"cross-env NODE_ENV=production node server.js build",
     "devStart": "nodemon server.js"
   },
   "author": "",
@@ -24,6 +25,7 @@
     "run-with-node-env": "^1.0.2"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "nodemon": "^3.0.2"
   }
 }
