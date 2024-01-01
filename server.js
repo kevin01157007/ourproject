@@ -93,6 +93,12 @@ const User = mongoose.model('User', userSchema);
   
   app.post('/register', checkNotAuthenticated, async (req, res) => {
     try {
+      const existingUser = await User.findOne({ email: req.body.email });
+      if (existingUser) {
+        // 如果已經被註冊，則返回一個錯誤訊息
+        req.flash('error', 'Email is already registered');
+        return res.redirect('/register');
+      }
       const hashedPassword = await bcrypt.hash(req.body.password, 10)
       const user = new User({
         name: req.body.name,
