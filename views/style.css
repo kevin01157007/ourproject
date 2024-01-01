@@ -48,18 +48,18 @@ p{
 }
 
 .but{
-        background-color: #b87708; 
-        color: white; 
-        padding: 15px 32px; 
-        text-align: center; 
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px; 
-        margin: 4px 2px; 
-        position:fixed;
-        top: 13%;
-        left:46%;
-
+    background-color: #b87708; 
+    color: white; 
+    padding: 15px 32px; 
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; 
+    margin: 4px 2px; 
+    position:fixed;
+    top: 13%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .social-icon.facebook{
     position: fixed;
@@ -91,7 +91,8 @@ p{
     color: aliceblue;
     position: fixed;
     top: 30%;
-    right: 47%;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 20px;
     padding: 15px 32px;
     background-color: #007BFF;
